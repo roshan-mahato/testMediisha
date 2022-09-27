@@ -1,0 +1,157 @@
+.doc-profile {
+  .doc-profile-img {
+    img {
+      height: 140px;
+      width: 140px;
+      border-radius: 12px;
+    }
+  }
+  .personalInfo {
+    h6 {
+      font-size: 22px;
+    }
+  }
+  .location {
+    white-space: normal;
+  }
+}
+.single-nav {
+  ul {
+    .active {
+      border-color: var(--site_color) !important;
+      a {
+        font-weight: 600;
+        color: var(--site_color) !important;
+      }
+    }
+    li {
+      transition: 0.3s;
+      border-bottom: 3px solid transparent;
+      a {
+        font-size: 14px;
+        color: var(--dropdown-clr);
+        padding: 20px;
+        font-weight: 500;
+      }
+      &:hover {
+        border-color: #f0f0f5;
+        a {
+          color: var(--secondary-black);
+        }
+      }
+    }
+  }
+}
+.single-dis {
+  h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+.sticky-header {
+  box-shadow: 0 2px 4px 0 rgba($color: #2e2e33, $alpha: 0.08);
+}
+#Locations {
+  .location {
+    p {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+}
+.review-img {
+  img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+  }
+}
+.day-cal {
+  span {
+    font-size: 11px;
+    padding: 2px 10px;
+    border-radius: 4px;
+  }
+  .closed {
+    background-color: #fadfe4;
+    color: #f71622;
+  }
+  .open {
+    background-color: rgba($color: #3dcc79, $alpha: 0.1);
+    color: #3dcc79;
+  }
+}
+.schedule {
+  .vid-icon {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #28328c;
+    color: #fff;
+  }
+  h6 {
+    font-size: 16px;
+  }
+}
+.book-slot {
+  div {
+    cursor: pointer;
+  }
+  p {
+    font-size: 13px;
+  }
+  .available {
+    color: #3dcc79;
+    font-size: 11px;
+  }
+}
+.slotes {
+  h6 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 11px;
+  }
+  height: 185px;
+  overflow-x: auto;
+  flex-flow: row wrap;
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+}
+.business_hour {
+  max-width: 500px;
+}
+.todays_slot {
+  .active {
+    background-color: var(--blue) !important;
+    a {
+      color: #fff !important;
+    }
+  }
+  .time {
+    background-color: #e1f5f9;
+    padding: 4px 8px;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+
+    a {
+      font-size: 14px;
+      color: var(--primary-black);
+    }
+  }
+}
+.hospitle-img {
+  img {
+    height: 130px;
+    width: 170px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}

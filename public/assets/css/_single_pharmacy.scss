@@ -1,0 +1,13 @@
+.pharmacy-pic {
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+.single-pharmacy {
+  .business_hour {
+    max-width: none;
+  }
+}

@@ -1,0 +1,52 @@
+.Common-form {
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 450px;
+  input {
+    height: 41px;
+    &::placeholder {
+      font-size: 14px;
+    }
+    font-size: 14px;
+  }
+  .form-select {
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 10px 30px !important;
+  }
+  .sidelink {
+    font-size: 13px;
+    color: var(--site_color);
+    font-weight: 500;
+    &:hover {
+      color: var(--blue);
+    }
+  }
+  .already-text {
+    .sidelink {
+      font-size: 12px;
+    }
+    font-size: 12px;
+    color: var(--dropdown-clr);
+  }
+}
+.login-img {
+  img {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.navbar-brand {
+  user-select: none;
+  width: 90px;
+  img {
+    user-select: none;
+    object-fit: cover;
+    width: 90%;
+  }
+}

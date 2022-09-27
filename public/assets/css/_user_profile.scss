@@ -1,0 +1,134 @@
+.edit-profile {
+  img {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+  }
+}
+.edit-profile-menu {
+  li {
+    transition: 0.4s;
+    z-index: 2;
+
+    a {
+      margin-left: 2px;
+      padding: 9px 20px;
+      color: var(--dropdown-clr);
+      border-left: 3px solid transparent;
+      font-size: 14px;
+
+      i {
+        font-size: 19px;
+      }
+    }
+  }
+  .active {
+    a {
+      color: var(--purple);
+      font-weight: 700;
+      z-index: 200;
+    }
+  }
+  .slide {
+    z-index: 0;
+    border-left: 3px solid var(--purple);
+    transition: 0.4s;
+    background: linear-gradient(45deg, #00000000 50%, #f4f2ff);
+    transition: 0.3s;
+    top: 0;
+    height: 39px;
+    position: absolute;
+    width: 100%;
+
+    opacity: 1;
+    a {
+      color: var(--purple);
+    }
+  }
+  li:nth-child(2).active ~ .slide {
+    top: 39px;
+    opacity: 1;
+  }
+  li:nth-child(3).active ~ .slide {
+    top: 78px;
+    opacity: 1;
+  }
+  li:nth-child(4).active ~ .slide {
+    top: 117px;
+    opacity: 1;
+  }
+  li:nth-child(5).active ~ .slide {
+    top: 156px;
+    opacity: 1;
+  }
+  .li:nth-child(6).active ~ .slide {
+    top: 195px;
+    opacity: 1;
+  }
+}
+
+.profile-side-bar {
+  //   box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #fff;
+  box-shadow: 0.4rem 0.4rem 1rem #c8d0e7, -0.4rem -0.4rem 1.8rem #fff;
+  border-radius: 10px;
+}
+.change-avtar {
+  .avatar-upload {
+    max-width: 157px;
+    margin: 10px auto 35px;
+  }
+  .avatar-upload .avatar-edit {
+    right: 10px;
+    z-index: 1;
+    top: 10px;
+  }
+  .avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  .avatar-upload .avatar-edit input + label:after {
+    content: "\f304";
+    font-family: "Font Awesome 5 Free";
+    color: #757575;
+    font-size: 10px;
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+  }
+  .avatar-upload .avatar-preview {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #f8f8f8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.patient-image {
+  font-size: 15px;
+  font-weight: 600;
+}

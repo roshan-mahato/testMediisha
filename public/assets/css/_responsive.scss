@@ -1,0 +1,233 @@
+@media screen and (max-width: 1400px) {
+  .menubar {
+    padding-right: 0 !important;
+  }
+  .menu-link {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+  .navbar-brand {
+    min-width: 100px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .banner .ban-right img {
+    top: -16px;
+    height: calc(93% + 36px);
+  }
+  .menubar .active::after {
+    bottom: 0;
+    height: 0px;
+  }
+  .slick-next {
+    right: 0px;
+  }
+  .slick-prev {
+    left: 0px;
+  }
+  .myDrop {
+    .content {
+      margin-left: 20px !important;
+    }
+  }
+  .drop-link {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+  .dropdown-menu {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .doctor-info .btn-appointment .btn-link {
+    padding: 10px 10px;
+  }
+  .doctor-info .btn-appointment .btn-outline-secondary {
+    padding: 10px 10px;
+  }
+  .pharmacy_card .pharmacy_card_img img {
+    height: 132px;
+
+    width: 170px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer-img img {
+    position: static !important;
+    transform: translateY(0);
+  }
+  .content {
+    .row {
+      --bs-gutter-x: 0rem;
+      --bs-gutter-y: 1rem;
+    }
+  }
+  .contact-ban {
+    height: max-content;
+    .Footer-ban {
+      padding: 30px 0;
+    }
+  }
+  .banner .ban-right img {
+    top: 51px;
+    height: 82%;
+  }
+  .banner .ban-sub p {
+    padding-top: 16px;
+    font-size: 13px;
+  }
+  .banner .ban-sub h3 {
+    font-size: 34px;
+    padding-bottom: 27px;
+  }
+  .footer-ban-text {
+    padding: 30px;
+  }
+  .Footer-ban {
+    overflow-x: hidden;
+  }
+  .footer-img {
+    padding: 30px;
+  }
+  .doctor .serach-box {
+    width: 712px;
+  }
+  .doctor-info .btn-appointment .btn-link {
+    padding: 10px 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Doc-Cards .doc-Card .info {
+    padding: 20px 3px;
+  }
+  .Doc-Cards .doc-Card {
+    min-width: 273px;
+  }
+  .ban-right {
+    display: none;
+  }
+  .left-ban {
+    width: 100% !important;
+  }
+  // .ban-right img {
+  // }
+  .banner {
+    margin-top: 20px !important;
+  }
+  .content .serach-box {
+    width: 320px;
+  }
+  .location,
+  .content .doc {
+    width: 100% !important;
+  }
+  .searching-filter .myDrop.show {
+    height: 335px;
+  }
+  .searching-filter .myDrop ul {
+    height: 319px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .comment-card {
+    max-width: 320px;
+    h6 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .content .serach-box {
+    width: 280px;
+  }
+  .banner {
+    height: fit-content;
+  }
+  .banner .left-ban {
+    padding-left: 20px;
+  }
+  .banner .ban-sub h3 {
+    font-size: 28px;
+    padding-bottom: 27px;
+    margin-top: 10px;
+  }
+  .banner .ban-sub p {
+    padding-top: 25px;
+    font-size: 13px;
+  }
+  .describe .view .login-btn {
+    padding: 10px 10px;
+  }
+  .top-art h3 {
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .btn-link {
+    padding: 11px 22px;
+  }
+  .consult-card {
+    padding: 12px;
+  }
+  .footer-img img {
+    width: 225px;
+    height: auto;
+  }
+  .doctor-info .btn-appointment .btn-outline-secondary {
+    width: 159.44px;
+  }
+  .single-nav ul li a {
+    padding: 10px;
+  }
+  .searching-filter .myDrop.show {
+    height: max-content;
+  }
+  .searching-filter .myDrop ul {
+    width: 144px;
+    height: fit-content;
+  }
+  .modal-body {
+    iframe,
+    .add-address {
+      width: 280px !important;
+    }
+  }
+  .sidelink {
+    font-size: 12px !important;
+  }
+  .pharmacy_card {
+    .doctor-info .btn-appointment .btn-outline-secondary {
+      width: 145.59px;
+    }
+  }
+}
+@media screen and (max-width: 476px) {
+  .single-nav ul {
+    // flex-direction: column;
+    // align-items: flex-start;
+    // li {
+    //   text-align: unset;
+    // }
+    // min-width: 400px;
+    // overflow-y: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    li {
+      padding: 10px 0;
+      border-bottom: 0;
+    }
+    .active {
+      border-bottom: 0;
+      box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
+        inset -0.2rem -0.2rem 0.5rem #fff;
+      border-radius: 6px;
+    }
+  }
+
+  .single-nav ul li a {
+    font-size: 11px;
+    padding: 5px;
+  }
+}

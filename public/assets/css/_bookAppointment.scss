@@ -1,0 +1,252 @@
+.book-doc-img {
+  img {
+    height: 100px !important;
+    width: 130px !important;
+    object-fit: cover;
+  }
+}
+.Appointment-detail {
+  .rating {
+    i {
+      font-size: 14px !important;
+      min-width: auto;
+    }
+  }
+
+  .progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    max-width: 100%;
+    // width: 350px;
+    &::before {
+      content: "";
+      background-color: #e0e0e0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+
+  .progress-container .progress {
+    background-color: var(--site_color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: 0;
+    transition: 0.4s ease;
+  }
+
+  .circle {
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #e0e0e0;
+    transition: 0.4s ease;
+  }
+
+  .circle.progress_active {
+    border-color: var(--site_color);
+  }
+
+  .btn {
+    background-color: var(--site_color);
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+  }
+
+  .btn:focus {
+    outline: 0;
+  }
+
+  .btn:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+}
+.common-heading {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.form-select {
+  &:focus {
+    box-shadow: none;
+    border-color: #e0e0e0;
+  }
+}
+.appointment-form {
+  .dd {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    .select {
+      color: var(--primary-black) !important;
+      font-weight: 500;
+    }
+    .dd-menu {
+      // border: 1px solid var(--secondary-black);
+      border-radius: 0 0 5px 5px;
+      // border-top: transparent;
+      li:hover {
+        background-color: #e0e0e0;
+        color: var(--primary-black);
+      }
+    }
+    &:active {
+      background-color: #e0e0e0;
+    }
+  }
+  .form-label {
+    font-size: 13px !important;
+    color: var(--dropdown-clr);
+  }
+  .form-control {
+    padding: 5px 10px;
+    font-size: 13px;
+    border-color: #e0e0e0;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+  a {
+    font-size: 13px;
+    color: var(--purple);
+  }
+  .img_preview {
+    width: 192px;
+    height: 192px;
+    // border: 1px solid;
+    border-radius: 10px;
+  }
+  .upload-label {
+    right: -15px;
+    top: 10px;
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    // border: 1px solid;
+    label {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .todays_slot {
+    max-width: 600px !important;
+  }
+}
+.booking-card-img {
+  img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+}
+.booking-summery {
+  h6 {
+    font-size: 18px !important;
+  }
+  .personalInfo p {
+    font-size: 12px !important;
+    font-weight: 500;
+  }
+}
+.bill {
+  p {
+    font-size: 14px;
+  }
+}
+.total-bill {
+  h5 {
+    font-weight: 600;
+    font-size: 17px;
+  }
+  p {
+    color: var(--purple);
+  }
+}
+
+input[type="radio"]:checked {
+  + label {
+    transition: 0.3s;
+    background-color: var(--purple) !important;
+    &::before {
+      border-color: var(--purple) !important;
+    }
+  }
+}
+.custom-radio {
+  left: 0;
+  top: 0;
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-top: 7px;
+  margin-left: 3px;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    border: 2px solid;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+.normal-label {
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.success-block {
+  width: 600px;
+  i {
+    font-size: 55px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--blue);
+    margin-bottom: 30px;
+  }
+  h5 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .btn-primary {
+    background: var(--blue);
+    border-color: var(--blue);
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

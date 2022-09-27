@@ -1,0 +1,446 @@
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 12;
+}
+.navbar {
+  justify-content: flex-start;
+}
+.avtar {
+  height: 45px;
+  object-fit: cover;
+  width: 45px;
+}
+.profile-detail {
+  overflow: visible;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 29px;
+    border: 7px solid #fff;
+    border-color: transparent transparent #ffffff #ffffff;
+    transform-origin: 0 0;
+    transform: rotate(135deg);
+    box-shadow: -2px 2px 2px -1px rgba($color: #000000, $alpha: 0.1);
+  }
+  li {
+    a {
+      transition: 0.3s;
+      &:hover {
+        // transform: translateX(5px);
+        letter-spacing: 0.5px;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+.avtar-wrapper {
+  .dropdown-menu[data-bs-popper] {
+    right: 0;
+    left: auto;
+  }
+}
+.page-wrapper {
+  background-color: #f0f0f5;
+}
+.jumbo {
+  margin-top: 25px;
+  background: var(--purple);
+}
+.jumbo_ban {
+  min-height: 460px;
+  background-image: url(../img/doctor-ban.svg);
+  background-attachment: fixed;
+  background-position-y: 60px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-size: 37px;
+    padding: 30px 0;
+    font-weight: 600;
+  }
+  h3 {
+    margin-top: 15px;
+    font-size: 23px;
+  }
+  .pop-search {
+    color: #8d93b3;
+    p {
+      font-size: 13px;
+    }
+    .breadcrumb-item {
+      a {
+        color: #8d93b3;
+        font-size: 13px;
+        &:hover {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.doctor {
+  input {
+    height: 50px !important;
+  }
+  .serach-box {
+    width: 785px;
+  }
+}
+.icon-wrapper {
+  padding: 20px 0;
+  background: #1d2869;
+  a {
+    padding: 0 30px;
+    color: #b8bbd9;
+    i {
+      color: #fff;
+      //   margin-bottom: 5px;
+      font-size: 18px;
+      transition: 0.2s;
+      font-weight: 100;
+    }
+    p {
+      font-size: 13px;
+      line-height: 28px;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid #4a5387;
+    }
+    &:hover {
+      i {
+        transform: scale(1.3);
+      }
+      color: #fff;
+    }
+  }
+}
+.full-content {
+  // min-height: calc(100vh - 120px);
+  // min-height: 650px;
+  color: var(--dropdown-clr);
+  .security-text {
+    p {
+      margin-top: 10px;
+      color: var(--secondary-black);
+      i {
+        color: var(--blue);
+        font-size: 23px;
+        margin: 0 5px;
+      }
+      font-size: 17px;
+    }
+    .security-check {
+      margin-top: 30px;
+    }
+    h3 {
+      font-size: 37px;
+      font-weight: 400;
+      line-height: 1.25;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+.searching-filter {
+  position: sticky;
+  top: 74px;
+  background: #1d2869;
+  z-index: 11;
+  p {
+    font-size: 13px;
+    color: #fff;
+    user-select: none;
+  }
+  .dropdown-toggle::after {
+    margin-left: 1.255em;
+  }
+  .myDrop.show {
+    // display: flex;
+    opacity: 1;
+    height: 160px;
+    padding: 0.5rem 0;
+    border-top: 1px solid #8d93b3 !important;
+    pointer-events: all;
+  }
+  .dropdown-menu {
+    li {
+      a {
+        // color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #fff;
+          background: #4a5387;
+          border-color: #4a5387;
+        }
+      }
+    }
+  }
+  .myDrop {
+    position: absolute !important;
+    background: #1d2869;
+    width: 100%;
+    left: 0;
+    top: 37px;
+    transform: translate3d(0px, 5px, 0px) !important ;
+    border-color: transparent;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    height: 0;
+    // padding-left: 173px !important;
+    transition: all 0.5s;
+
+    ul {
+      list-style-type: none;
+      // min-width: 280px;
+      height: 120px;
+      // min-height: 120px;
+      flex-flow: column wrap;
+    }
+    li {
+      a {
+        color: #fff;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background: #4a5387;
+          border-color: #4a5387;
+        }
+      }
+    }
+    h6 {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
+}
+// .dropdown-hover:hover > .dropdown-menu {
+//   display: flex;
+// }
+.dropdown,
+.btn-group {
+  .btn-secondary {
+    font-weight: 300;
+    font-size: 13px;
+    border-radius: 2px;
+    background: #4a5387;
+    border-color: #4a5387;
+    &:hover,
+    &:active,
+    &:focus {
+      background: #4a5387;
+      border-color: #4a5387;
+      box-shadow: none;
+    }
+  }
+}
+.form-check {
+  display: block;
+  min-height: auto;
+  padding-left: 1.5em;
+  margin-bottom: 0;
+}
+.form-check-input {
+  &:focus {
+    border-color: #4a5387;
+    box-shadow: none;
+  }
+  &:active {
+    background: #fff;
+  }
+  &:checked {
+    border-color: #4a5387;
+    background-color: #8d93b3;
+  }
+}
+.select-Sort {
+  .dd {
+    width: 90px;
+    display: inline-block;
+    background: #4a5387;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    position: relative;
+    font-size: 14px;
+    &:focus-visible {
+      outline: none;
+    }
+  }
+  .dd .select {
+    cursor: pointer;
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .dd .select > i {
+    font-size: 13px;
+    color: fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    float: right;
+    line-height: 20px;
+  }
+
+  .dd:active {
+    background-color: #4a5387;
+  }
+  .dd.active .select > i {
+    transform: rotate(-180deg);
+  }
+  .dd .dd-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 1px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9;
+  }
+  .dd .dd-menu li {
+    padding: 5px 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .dd .dd-menu {
+    padding: 0;
+    list-style: none;
+  }
+  .dd .dd-menu li:hover {
+    background-color: #8d93b3;
+    color: #fff;
+  }
+  .dd .dd-menu li:active {
+    background-color: #8d93b3;
+  }
+}
+.doct-card {
+  overflow: hidden;
+  &:hover {
+    .view-profile {
+      color: var(--blue);
+    }
+    .add-favourite {
+      transform: translateX(-10px);
+    }
+  }
+
+  .doct-card-img {
+    img {
+      height: 140px;
+      width: 140px;
+      object-fit: cover;
+    }
+  }
+  .personalInfo {
+    color: var(--dropdown-clr);
+    white-space: nowrap;
+    h6 {
+      margin-top: 5px;
+      text-overflow: ellipsis;
+      font-size: 19px;
+    }
+    p {
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+    img {
+      height: 20px;
+      width: 20px;
+      object-fit: contain;
+    }
+  }
+  .post {
+    p {
+      font-size: 13px;
+      color: #1d2869;
+      font-weight: 500;
+    }
+  }
+  .view-profile {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blue);
+  }
+  i {
+    font-size: 20px;
+    min-width: 25px;
+  }
+}
+.rating {
+  color: #dedfe0;
+  .active {
+    color: #f4c150;
+  }
+  span {
+    color: var(--primary-black);
+    font-size: 13px;
+  }
+}
+.doctor-info {
+  .bx-map {
+    min-width: unset !important;
+  }
+  p {
+    font-size: 14px;
+  }
+  .btn-appointment {
+    .btn-outline-secondary {
+      padding: 10px 24px;
+      font-size: 14px !important;
+      border-color: var(--blue) !important;
+      &:hover {
+        background-color: var(--blue);
+        color: #fff;
+      }
+    }
+    .btn-link {
+      padding: 10px 24px;
+      &:hover {
+        background-color: #fff;
+        border-color: var(--blue);
+        color: var(--blue);
+      }
+    }
+  }
+}
+.add-favourite {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 10px;
+  right: 0px;
+  transform: translateX(50px);
+  // border: 1px solid;
+  transition: 0.4s;
+  i {
+    min-width: unset;
+  }
+}
+.add-favourite.active {
+  background-color: red;
+  // position: relative !important;
+  transform: translateX(-10px);
+  i {
+    color: #fff;
+  }
+}
