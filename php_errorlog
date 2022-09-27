@@ -1,0 +1,5 @@
+[18-May-2022 10:14:41 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.29. in /home/customer/www/mediisha.com/public_html/vendor/composer/platform_check.php on line 24
+[20-May-2022 06:33:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/mediisha.com/public_html/wp-load.php' (include_path='.:/usr/local/php80/pear') in /home/customer/www/mediisha.com/public_html/wp_auto_login_b113b8ace0243b9d06c8cce2162d6eea.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/mediisha.com/public_html/wp_auto_login_b113b8ace0243b9d06c8cce2162d6eea.php on line 40
